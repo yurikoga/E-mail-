@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #6c5ce7; /* Cor de fundo da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.newsletter-card {
+    background-color: #fff;
+    width: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Seção Azul */
+.top-section {
+    background-color: #0000b3; /* Azul escuro */
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box i {
+    font-size: 80px;
+    color: #cbd5e0; /* Cor cinza clara do ícone */
+}
+
+/* O pequeno triângulo (seta) */
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #0000b3;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Seção Branca */
+.bottom-section {
+    padding: 40px 30px;
+}
+
+.bottom-section h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Input de E-mail */
+input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus {
+    border-color: #6c5ce7;
+}
+
+/* Botão Subscribe */
+.btn-subscribe {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c5ce7; /* Azul/Roxo do botão */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-subscribe:hover {
+    background-color: #5649c1;
+}
+
+/* Texto de Spam */
+.spam-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
